@@ -93,17 +93,14 @@ const Login = () => {
   };
   return (
     <div>
-      <Container
-        style={{ height: "100vh" }}
-        className="justify-content-center align-content-center"
-      >
-        {/* Icone de login */}
-        <span
-          style={{ fontSize: "200px", color: "white" }}
-          className="material-symbols-outlined"
-        >
-          login
-        </span>
+      <Container style={{ height: "100vh" }} className="justify-content-center align-content-center">
+        {/* Substituindo o ícone pela logo */}
+        <img
+          src="https://www.softisa.com.br/wp-content/uploads/2020/01/Logo-Doce-Del%C3%ADcia.png"  // Caminho para a logo, substitua com o caminho real
+          alt="Logo"
+          style={{ width: "200px", marginBottom: "20px" }} // Ajuste o tamanho da logo conforme necessário
+        />
+        
         <Form style={{ width: "75%", margin: "auto" }} onSubmit={handleLogin}>
           {/* Caixinha de email */}
           <FloatingLabel
@@ -145,8 +142,8 @@ const Login = () => {
           </div>
 
           {/* Botao pra enviar o formulário */}
-          <Button variant="light" type="submit" className="mt-4" size="lg">
-            Login
+          <Button variant="warning" type="submit" className="mt-4" size="lg">
+            Entrar como funcionário
           </Button>
         </Form>
       </Container>
